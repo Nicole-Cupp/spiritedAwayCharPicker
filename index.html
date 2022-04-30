@@ -5,111 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/main.css">
+
     <title>Characters - Spirited Away</title>
 </head>
 <body>
+    <header>
+        <!--
+        =================
+        TITLE / HEADING
+        =================
+        -->
+        <h1>Spirited Away</h1>
+        <h3>Characters</h3>
+        <!--
+        ======================
+        CHARACTER NAVIGATION
+        ======================
+        -->
+        <nav>
+            <ul>
+                <li>Chihiro</li>
+                <li>Haku</li>
+                <li>Kamaji</li>
+                <li>Soot Sprites</li>
+                <li>Lin</li>
+                <li>Yubaba</li>
+                <li>No-Face <span>aka Kaonashi</span></li>
+                <li>Baby <span>aka B&#244;h</span></li>
+                <li>Zeniba</li>
+            </ul>
+        </nav>
+    </header>
     <!--
-    =================
-    TITLE / HEADING
-    =================
+    =======================
+    CHARACTER INFORMATION
+    =======================
     -->
-    <h1>Spirited Away</h1>
-    <h3>Characters</h3>
-    <!--
-    ======================
-    CHARACTER NAVIGATION
-    ======================
-    -->
-    <nav>
-        <ul>
-            <li>Chihiro</li>
-            <li>Haku</li>
-            <li>Kamaji</li>
-            <li>Soot Sprites</li>
-            <li>Lin</li>
-            <li>Yubaba</li>
-            <li>No-Face aka Kaonashi</li>
-            <li>Baby <span>aka B&#244;h</span></li>
-            <li>Zeniba</li>
-        </ul>
-    </nav>
-    <!--
-    ==================
-    CHARACTER IMAGES
-    ==================
-    -->
-    <section>
-        <img src="" alt="Chihiro">
-        <img src="" alt="Haku">
-        <img src="" alt="Kamaji">
-        <img src="" alt="Soot Sprites">
-        <img src="" alt="Lin">
-        <img src="" alt="Yubaba">
-        <img src="" alt="No-Face aka Kaonashi">
-        <img src="" alt="Baby aka B&#244;h">
-        <img src="" alt="Zeniba">
-    </section>
-    <!--
-    =================
-    ABOUT CHARACTER
-    =================
-    -->
-    <section>
-        <!--CHIHIRO-->
-        <section>
-            <h2>Chihiro</h2>
-            <p></p>
-            <img src="./assets/gif/chihiro.gif" alt="Chihiro GIF">
+    <main>
+        <section class="aboutChars">
+            <!--CHIHIRO-->
+            <section id="chihiro" class="chihiro">
+                <div>
+                    <h2>Chihiro</h2>
+                    <img class="chihiro" src="./assets/images/chihiroMed.jpg" alt="Chihiro">
+                </div>
+
+                <div>
+                    <img class="gif clearfix" src="./assets/gif/chihiro.gif" alt="Chihiro GIF">
+                    <p>Chihiro Ogino is a ten year old girl and the main protagonist.</p>
+                    <p>While moving to a new town, Chihiro and her parents stumble into the spirit world by accident. Not realizing they had traversed onto a new plane, her parents find themselves in trouble as they are transformed into pigs. Alone and scared, Chihiro must find a way to save her parents and return to the human world or suffer the same fate. Through the help of friends, she starts to work in a bathhouse for a witch called Yubaba, who takes her name and changes it to Sen. Follow along Chihiro's journey as she learns and grows from her time within the spirit world.</p>
+                </div>
+            </section>
+            <!--HAKU-->
+            <section id="haku" class="haku">
+                <div>
+                    <h2>Haku</h2>
+                    <img src="./assets/images/hakuMed.jpg" alt="Haku">
+                </div>
+
+                <div>
+                    <img class="gif" src="./assets/gif/haku.gif" alt="Haku GIF">
+                    <p>Haku is a seemingly young boy shrouded in secrets and the secondary main character.</p>
+                    <p>While Chihiro is lost within the spirit world, she comes across a mysterious boy named Haku. Chihiro decides to trust him, and he leads her to Yubaba's bathhouse, so she can ask for a job in order to avoid being turned into an animal, like her parents. Haku is Yubaba's right hand man who often runs errands for her, and he has a questionable reputation among the resident workers within the bathhouse. He can be aloof and stern towards Chihiro one moment, and kind and considerate the next, making his true intentions uncertain.</p>
+                </div>
+            </section>
+            <!--NO-FACE-->
+            <section id="noFace" class="noFace">
+                <div>
+                    <h2>No-Face <span class="lgSpan">aka Kaonashi</span></h2>
+                    <img src="./assets/images/noFaceMed.jpg" alt="No-Face aka Kaonashi">
+                </div>
+
+                <div>
+                    <img class="gif" src="./assets/gif/noFace.gif" alt="No-Face aka Kaonashi GIF">
+                    <p>No-Face is a wandering spirit who stumbles upon Yubaba's business. He is impressionable, sensitive to other's emotions, and can ingest others to take on their personality and physical traits.</p>
+                    <p>Chihiro first comes across No-Face without any knowledge on who he is or what he is capable of. She shows kindness to the spirit by allowing him to enter the bathhouse, but chaos ensues. No-Face is eager to please all those he encounters, but is overwhelmed by the plethora of positive and, more importantly, negative emotions within the bathhouse.</p>
+                </div>
+            </section>
+            <!--KAMAJI-->
+            <section id="kamaji" class="kamaji">
+                <div>
+                    <h2>Kamaji</h2>
+                    <img src="./assets/images/kamajiMed.jpg" alt="Kamaji">
+                </div>
+
+                <div>
+                    <img class="gif" src="./assets/gif/kamaji.gif" alt="Kamaji GIF">
+                    <p>Kamaji is an elderly man with six long arms, who is in charge of running the bathhouse's boiler room, with the help of his Soot Sprite workers. The Soot sprites help maintain the furnace fire, while Kamaji manages guests' requests by supplying herbal bathwater.</p>
+                    <p>Chihiro meets Kamaji during her quest to obtain a job. Upon their first encounter, Kamaji is unimpressed and unfriendly towards Chihiro. He attempts to turn her away, but is met with an unwavering determination. Their relationship slowly grows as Chihiro spends more time within the confines of the bathhouse.</p>
+                </div>
+            </section>
+            <!--Soot Sprites-->
+            <section id="sootSprites" class="id="sootSprites"">
+                <div>
+                    <h2>Soot Sprites</h2>
+                    <img src="./assets/images/sootSpritesMed.png" alt="Soot Sprites">
+                </div>
+
+                <div>
+                    <img class="gif" src="./assets/gif/sootSprites.gif" alt="Soot Sprites GIF">
+                    <p>Soot Sprites are soot balls imbued with magic for the sole purpose of working. They possess strength far greater than their tiny size, and assist Kamaji in running the boiler room by fueling the furnace when it's in need of coal. They are paid in star shaped food and must continue to work, otherwise they will turn back to soot.</p>
+                    <p>Chihiro discovers the Soot Sprites during her meeting with Kamaji. Through her kindness, the Soot Sprites become fast allies who cheer her on throughout her journey.</p>
+                </div>
+            </section>
+            <!--LIN-->
+            <section id="lin" class="lin">
+                <div>
+                    <h2>Lin</h2>
+                    <img src="./assets/images/linMed.jpg" alt="Lin">
+                </div>
+
+                <div>
+                    <img class="gif" src="./assets/gif/lin.gif" alt="Lin GIF">
+                    <p>Lin, although taking the appearance of a human, is a Byakko – white tiger spirit – and works at the bathhouse as a Yuna – a female who lives and works at Yubaba's business.</p>
+                    <p>Among many others, Lin is skeptical and unsure of Chihiro's presence. Despite her initial skepticism, she decides to stick her neck out for the young girl. Lin is eventually tasked with the responsibility of taking care of the child as she becomes Lin's assistant, and, under the supervision of Lin, Chihiro learns the ins and outs of working at the bathhouse.</p>
+                </div>
+            </section>
+            <!--YUBABA-->
+            <section id="yubaba" class="yubaba">
+                <div>
+                    <h2>Yubaba</h2>
+                    <img src="./assets/images/yubabaMed.jpeg" alt="Yubaba">
+                </div>
+
+                <div>
+                    <img class="gif" src="./assets/gif/yubaba.gif" alt="Yubaba GIF">
+                    <p>Yubaba is an overbearing and intimidating witch and the main antagonist. She is the proprietor of the bathhouse, has a son named B&#244;h, and has a pet bird. She can come off as being frugal and selfish, but runs her bathhouse professionally and is willing to acknowledge the hard work of others.</p>
+                    <p>After traversing the inner quarters of the bathhouse, Chihiro comes face to face with Yubaba. Squaring up to the businesswoman herself, Chihiro won't take no for an answer as she begs for a job. Yubaba's patience grows thin, as she doesn't see the merit in hiring a human to work at her establishment. Regardless, Yubaba concedes due to an unplanned disturbance and creates a contract with Chihiro in exchange for her name, renaming her Sen.</p>
+                </div>
+            </section>
+            <!--BABY-->
+            <section id="baby" class="baby">
+                <div>
+                    <h2>Baby <span class="lgSpan">aka B&#244;h<span></h2>
+                    <img src="./assets/images/babyMed.jpg" alt="Baby aka B&#244;h">
+                </div>
+
+                <div>
+                    <img class="gif" src="./assets/gif/baby.gif" alt="Baby aka B&#244;h GIF">
+                    <p>B&#244;h is Yubaba's mysophobic and extremely spoiled son. He is used to getting whatever he wants, when he wants it.</p>
+                    <p>A chance encounter with Chihiro and Zeniba sends B&#244;h on the biggest adventure of his life yet. Zeniba, wanting to teach the overindulged baby a lesson, turns him into a mouse. During this encounter, Yubaba's bird is also transformed, turning into a tiny and feeble version of itself. B&#244;, accompanied by Yubaba's pet bird, set out on a quest to find Zeniba and be turned back to normal.</p>
+                </div>
+            </section>
+            <!--ZENIBA-->
+            <section id="zeniba" class="zeniba">
+                <div>
+                    <h2>Zeniba</h2>
+                    <img src="./assets/images/zenibaMed.jpg" alt="Zeniba">
+                </div>
+
+                <div>
+                    <img class="gif" src="./assets/gif/zeniba.gif" alt="Zeniba GIF">
+                    <p>Zenniba is a peaceful witch and Yubaba's identical twin sister. Yubaba and Zeniba are often at odds with each other as their personalities are polar opposites.</p>
+                    <p>Chihiro and her friends venture outside of the bathhouse to find Zeniba and right a wrong. Despite how scary she first seemed, Chihiro quickly realizes that she is a kind and hospitable woman who brings Chihiro a lot of comfort while in a brand new world.</p>
+                </div>
+            </section>
         </section>
-        <!--HAKU-->
-        <section>
-            <h2>Haku</h2>
-            <p></p>
-            <img src="./assets/gif/haku.gif" alt="Haku GIF">
-        </section>
-        <!--KAMAJI-->
-        <section>
-            <h2>Kamaji</h2>
-            <p></p>
-            <img src="./assets/gif/kamaji.gif" alt="Kamaji GIF">
-        </section>
-        <!--Soot Sprites-->
-        <section>
-            <h2>Soot Sprites</h2>
-            <p></p>
-            <img src="./assets/gif/sootSprites.gif" alt="Soot Sprites GIF">
-        </section>
-        <!--LIN-->
-        <section>
-            <h2>Lin</h2>
-            <p></p>
-            <img src="./assets/gif/lin.gif" alt="Lin GIF">
-        </section>
-        <!--YUBABA-->
-        <section>
-            <h2>Yubaba</h2>
-            <p></p>
-            <img src="./assets/gif/yubaba.gif" alt="Yubaba GIF">
-        </section>
-        <!--NO-FACE-->
-        <section>
-            <h2>No-Face aka Kaonashi</h2>
-            <p></p>
-            <img src="./assets/gif/noFace.gif" alt="No-Face aka Kaonashi GIF">
-        </section>
-        <!--BABY-->
-        <section>
-            <h2>Baby aka B&#244;h</h2>
-            <p></p>
-            <img src="./assets/gif/baby.gif" alt="Baby aka B&#244;h GIF">
-        </section>
-        <!--ZENIBA-->
-        <section>
-            <h2>Zeniba</h2>
-            <p></p>
-            <img src="./assets/gif/zeniba.gif" alt="Zeniba GIF">
-        </section>
-    </section>
+    </main>
 
     <script src="./javascript/main.js"></script>
 </body>
