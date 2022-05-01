@@ -114,6 +114,12 @@ body {
     font-size: clamp(2.4rem, 10vw, 2.8rem);
 }
 /*INTERACTIVE STYLES*/
+li:hover,
+.active {
+    border-bottom: 0.05rem solid #fff;
+    margin-top: -0.05rem;
+    overflow: hidden;
+}
 /*===========================================
     LAYOUT
 ===========================================*/
@@ -131,6 +137,9 @@ img,
 .gif {
     display: block;
 }
+li {
+    padding: 1rem;
+}
 li,
 span,
 ul {
@@ -140,49 +149,85 @@ ul {
 main {
     padding-top: 3rem;
 }
+main > section > section {
+    display: flex;
+}
 p {
     line-height: 1.2;
 }
 ul {
     display: flex;
-    align-items: center;
     align-content: space-between;
+    align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 /*BY CLASS*/
 .aboutChars p + p {
     text-indent: 4.5rem;
 }
-
+.hidden {
+    display: none;
+}
 /*===========================================
     MEDIA QUERIES
 ===========================================*/
 /*MOBILE RESPONSIVE*/
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	/*LAYOUT CHANGES*/
+    html {
+        padding: 5%;
+    }
     img,
     .gif {
         width: 100%;
     }
-    li {
+    main > section > section {
         display: block;
     }
-    ul {
+    div + div {
+        display: flex;
         flex-direction: column;
-    }
-
+    } 
+    div + div > img {
+        order: 1;
+    } 
+    div + div > p:first-of-type {
+        padding-top: 2rem;
+    } 
 }
-/*FIXING MENU ITEM PICTURES*/
-@media (min-width: 601px) and (max-width: 1397px) {
+/*FIXING FORMATTING & PICTURES*/
+@media (min-width: 801px) and (max-width: 1599px) {
 	/*LAYOUT CHANGES*/
-
+    html {
+        padding: 5%;
+    }
+    main > section > section {
+        display: flex;
+    }
+    div + div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    } 
+    div + div > p:last-of-type {
+        padding-bottom: 0;
+    } 
+    .aboutChars img:first-of-type {
+        max-width: 50rem;
+    }
+    .aboutChars > section div:first-of-type {
+        margin-right: 5%;
+    }
+    .gif {
+        display: none;
+    }
 }
 /*LAPTOP/DESKTOP RESPONSIVE*/
-@media (min-width:1280px) {
+@media (min-width:1600px) {
 	/*LAYOUT CHANGES*/
     /*BY CLASS*/
     .aboutChars > section {
-        display: flex;
         padding: 2%;
     }
     .aboutChars > section div:first-of-type {
