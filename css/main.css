@@ -63,7 +63,6 @@ html {
     font-size: 10px;
     padding: 1% 5%;
 }
-
 /*===========================================
     BASE STYLES/FORMAT
 ===========================================*/
@@ -86,15 +85,19 @@ h2 {
 h3 {
     font-size: clamp(2.8rem, 10vw, 4.8rem);
 }
-.lgSpan {
-    font-size: clamp(2.4rem, 10vw, 3.6rem);
-}
 li {
     font-size: clamp(2.2rem, 10vw, 3.2rem);
 }
 p,
 span {
     font-size: clamp(2rem, 10vw, 2.2rem);
+}
+/*CLASSES*/
+.aboutChars p::first-letter {
+    font-size: clamp(2.4rem, 10vw, 2.8rem);
+}
+.lgSpan {
+    font-size: clamp(2.4rem, 10vw, 3.6rem);
 }
 /*BACKGROUND IMAGES*/
 body {
@@ -108,10 +111,6 @@ body {
     background-position: center, bottom;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.aboutChars p::first-letter {
-    font-size: clamp(2.4rem, 10vw, 2.8rem);
 }
 /*INTERACTIVE STYLES*/
 li:hover,
